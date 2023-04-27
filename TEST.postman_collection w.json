@@ -1,0 +1,569 @@
+{
+	"info": {
+		"_postman_id": "f27109d5-5efd-41e2-a533-d0b2fadf2e9d",
+		"name": "TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44364/Products/23?language=en",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nameEn\": \"15 en\",\r\n  \"nameAr\": \"15 عربي\",\r\n  \"creationDate\": \"2023-04-27T19:41:52.775Z\",\r\n  \"startDate\": \"2023-04-27T19:41:52.775Z\",\r\n  \"duration\": 5,\r\n  \"price\": 55,\r\n  \"customFields\": [\r\n    {\r\n      \"titleEn\": \"tit en\",\r\n      \"titleAr\": \"‘عنوان\",\r\n\r\n      \"keyValues\": [\r\n        {\r\n          \"keyEn\": \"key  en\",\r\n          \"keyAr\": \"key Ar\",\r\n          \"valueEn\": \"val en\",\r\n          \"valueAr\": \"val ar\"\r\n        }\r\n      ]\r\n    }\r\n  ],\r\n  \"categoryId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44364/Products/23?language=en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Products",
+						"23"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15",
+							"disabled": true
+						},
+						{
+							"key": "nameEn",
+							"value": "new name",
+							"disabled": true
+						},
+						{
+							"key": "nameAr",
+							"value": "اسم جديد",
+							"disabled": true
+						},
+						{
+							"key": "creationDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "startDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "duration",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Products?language=ar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nameEn\": \"15 en\",\r\n  \"nameAr\": \"15 عربي\",\r\n  \"creationDate\": \"2023-04-27T19:41:52.775Z\",\r\n  \"startDate\": \"2023-04-27T19:41:52.775Z\",\r\n  \"duration\": 5,\r\n  \"price\": 55,\r\n  \"customFields\": [\r\n    {\r\n      \"titleEn\": \"tit en\",\r\n      \"titleAr\": \"‘عنوان\",\r\n\r\n      \"keyValues\": [\r\n        {\r\n          \"keyEn\": \"key  en\",\r\n          \"keyAr\": \"key Ar\",\r\n          \"valueEn\": \"val en\",\r\n          \"valueAr\": \"val ar\"\r\n        }\r\n      ]\r\n    }\r\n  ],\r\n  \"categoryId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44364/Products?language=ar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Products"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15",
+							"disabled": true
+						},
+						{
+							"key": "nameEn",
+							"value": "new name",
+							"disabled": true
+						},
+						{
+							"key": "nameAr",
+							"value": "اسم جديد",
+							"disabled": true
+						},
+						{
+							"key": "creationDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "startDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "duration",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "ar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Products/15?language=ar",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 15,\r\n  \"nameEn\": \"15 en\",\r\n  \"nameAr\": \"15 عربي\",\r\n  \"creationDate\": \"2023-04-27T19:41:52.775Z\",\r\n  \"startDate\": \"2023-04-27T19:41:52.775Z\",\r\n  \"duration\": 5,\r\n  \"price\": 55,\r\n  \"customFields\": [\r\n    {\r\n      \"titleEn\": \"tit en\",\r\n      \"titleAr\": \"‘عنوان\",\r\n\r\n      \"keyValues\": [\r\n        {\r\n          \"keyEn\": \"key  en\",\r\n          \"keyAr\": \"key Ar\",\r\n          \"valueEn\": \"val en\",\r\n          \"valueAr\": \"val ar\"\r\n        }\r\n      ]\r\n    }\r\n  ],\r\n  \"categoryId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44364/Products/15?language=ar",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Products",
+						"15"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15",
+							"disabled": true
+						},
+						{
+							"key": "nameEn",
+							"value": "new name",
+							"disabled": true
+						},
+						{
+							"key": "nameAr",
+							"value": "اسم جديد",
+							"disabled": true
+						},
+						{
+							"key": "creationDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "startDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "duration",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "ar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Products/15?language=en",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 15,\r\n  \"nameEn\": \"15 en\",\r\n  \"nameAr\": \"15 عربي\",\r\n  \"creationDate\": \"2023-04-27T19:41:52.775Z\",\r\n  \"startDate\": \"2023-04-27T19:41:52.775Z\",\r\n  \"duration\": 5,\r\n  \"price\": 55,\r\n  \"customFields\": [\r\n    {\r\n      \"titleEn\": \"tit en\",\r\n      \"titleAr\": \"‘عنوان\",\r\n\r\n      \"keyValues\": [\r\n        {\r\n          \"keyEn\": \"key  en\",\r\n          \"keyAr\": \"key Ar\",\r\n          \"valueEn\": \"val en\",\r\n          \"valueAr\": \"val ar\"\r\n        }\r\n      ]\r\n    }\r\n  ],\r\n  \"categoryId\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44364/Products/15?language=en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Products",
+						"15"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15",
+							"disabled": true
+						},
+						{
+							"key": "nameEn",
+							"value": "new name",
+							"disabled": true
+						},
+						{
+							"key": "nameAr",
+							"value": "اسم جديد",
+							"disabled": true
+						},
+						{
+							"key": "creationDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "startDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "duration",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Products/15?language=en",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/Products/15?language=en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Products",
+						"15"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15",
+							"disabled": true
+						},
+						{
+							"key": "nameEn",
+							"value": "new name",
+							"disabled": true
+						},
+						{
+							"key": "nameAr",
+							"value": "اسم جديد",
+							"disabled": true
+						},
+						{
+							"key": "creationDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "startDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "duration",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Products/15?language=ar\n",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/Products/15?language=ar\n",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Products",
+						"15"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15",
+							"disabled": true
+						},
+						{
+							"key": "nameEn",
+							"value": "new name",
+							"disabled": true
+						},
+						{
+							"key": "nameAr",
+							"value": "اسم جديد",
+							"disabled": true
+						},
+						{
+							"key": "creationDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "startDate",
+							"value": "2023-04-27T19:41:52.775Z",
+							"disabled": true
+						},
+						{
+							"key": "duration",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "language",
+							"value": "ar\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Products?language=en",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/Products?language=en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Products"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Categories/6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:44364/Categories/6"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Categories/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:44364/Categories/5"
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Categories?lang=en",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/Categories?lang=en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Categories"
+					],
+					"query": [
+						{
+							"key": "lang",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Categories/1?lang=en",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/Categories/1?lang=en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Categories",
+						"1"
+					],
+					"query": [
+						{
+							"key": "lang",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44364/Categories/6?lang=en",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/Categories/6?lang=en",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"Categories",
+						"6"
+					],
+					"query": [
+						{
+							"key": "lang",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
